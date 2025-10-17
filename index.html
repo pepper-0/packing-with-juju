@@ -11,76 +11,57 @@
     <div id = "play-section">
         <div id = "start-screen">
             <h1>packing with juju ⍝◜ᐢ•🐽•ᐢ◝⍝</h1>
-            <button id = "start-button" onclick = "startGame()">start ▶</button>
+            <button name = "start-button" id = "start-button" onclick = "showHome()">start ▶</button>
         </div>
 
         <div id = "home-screen">
-            <!--
-            - background
-                - closet shelf (clothing rack + shoes)
-                    - rain jacket
-                    - warm sweater
-                    - dress
-                    - sleep onesie
-                    - spa fit
-                    - hiking boots
-                    - sandals
-                - desk/bookshelf (notebook , computer, water)
-                    - computer (INFO; NOT INTERACTIVE)
-                    - journal
-                    - camera
-                    - water bottle
-                    - headphones
-                - vanity (beauty, sunscreen)
-                    - sunscreen
-                    - toothbrush and paste
-                    - shower essentials
-                    - sunnies
-            -->
-
-            <!-- different level divs -->
-            <div id = "level-hiking"></div>
-                <!--
-                - backpack (clothing 4, misc 4)
-                    - rain jacket
-                    - warm sweater
-                    - sleep onesie
-                    - hiking boots
-
-                    - journal
-                    - camera
-                    - water bottle
-
-                    - ALL VANITY
-                -->
-            <div id = "level-resort"></div>
-                <!-- 
-                - luggage (clothing 4, misc 2)
-                    - dress
-                    - spa fit
-                    - sleep onesie
-                    - sandals
-                - little bag (uniqlo)
-                    - journal
-                    - ALL VANITY
-                -->
-            <div id = "level-country"></div>
-                <!--
-                - backpack (clothing 4, misc 3)
-                    - warm sweater
-                    - dress
-                    - sleep onesie
-                    - sandals
-                
-                - tote bag 
-                    - journal
-                    - camera
-                    - water bottle
-
-                    - ALL VANITY
-                -->
+            <div id = "computer">
+                computer
+                <button id = "level-hiking" onclick = "chooseLevel(0)">
+                    hiking
+                </button>
+                <button id = "level-resort" onclick = "chooseLevel(1)">
+                    resort
+                </button>
+                <button id = "level-country" onclick = "chooseLevel(2)">
+                    country (grandma's house)
+                </button>
+            </div>
         </div>
-    </div>
-        
+
+        <div id = "level-screen">
+            <div id = "closet-section">
+                closet section
+                <div id = "rain-jacket">rain jacket</div>
+                <div id = "sweater">sweater</div>
+                <div id = "dress">dress</div>
+                <div id = "onesie">onesie</div>
+                <div id = "spa">spa</div>
+
+                <div id = "hiking-boots">hiking boots</div>
+                <div id = "sandals">sandals</div>
+            </div>
+            <div id = "desk-section">
+                desk section
+                <div id = "journal">journal</div>
+                <div id = "camera">camera</div>
+                <div id = "water-bottle">water bottle</div>
+                <div id = "headphones"></div>
+            </div>
+            <div id = "vanity-section">
+                vanity section
+                <div id = "sunscreen">sunscreen</div>
+                <div id = "toothbrush-paste">toothbrush/paste</div>
+                <div id = "essentials">essentials</div>
+                <div id = "sunglasses">sunglasses</div>
+            </div>
+            <div id = "helper">
+                helper
+                <div id = "narration">narration box</div> 
+                <div id = "capacityLists">capacity lists</div>
+            </div>
+        </div>
+
+    </div>        
 </body>
 </html>

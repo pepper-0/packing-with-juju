@@ -1,18 +1,74 @@
+@font-face {
+    font-family: 'Fredoka One';
+    src: url("assets/fonts/FredokaOne-Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Sophie Comic';
+    src: url("assets/fonts/Sophiecomic-Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* General */
 body {
     margin: 0 auto;
-    padding-left: 15%;
-    padding-right: 15%;
+    font-family: 'Sophie Comic', sans-serif;
 }
-#start-screen {
-    background-color: rgb(237, 207, 212);
-    display: inline-block;
-    margin: 0 auto;
+
+h1 {
+    font-family: 'Fredoka One', sans-serif;
+    text-align: center;
+    color: rgb(54, 45, 47);
 }
 
 button {
+    font-family: 'Sophie Comic', sans-serif;
     background-color: pink;
     border-radius: 5px;
     padding: 10px;
     border-color: rgb(54, 45, 47);
     border-style: groove;
+}
+
+button:hover {
+    background-color: gray;
+}
+
+/* Play Section */
+#play-section {
+    width: 70%;
+    height: 70%;
+    margin: 0 auto;
+}
+/* Start Screen */
+#start-screen {
+    width: 100%;
+    height: auto;
+    background-color: rgb(237, 207, 212);
+    margin: 0 auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Home Screen */
+#home-screen {
+    width: 100%; 
+    height: auto;
+    background-color: beige;
+
+    display: none;
+}
+
+/* Level Screen */
+#level-screen {
+    width: 100%; 
+    height: auto;
+    background-color: gray;
+
+    display: none;
 }
